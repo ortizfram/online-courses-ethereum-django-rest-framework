@@ -7,7 +7,7 @@ require("dotenv").config()
 module.exports = {
   solidity: "0.8.19",
   paths : {
-    artifacts: '.src/cache/abis'
+    artifacts: './src/cache'
   },
   networks: { 
     hardhat: {
