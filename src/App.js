@@ -14,6 +14,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import store from "store";
+import About from "containers/pages/About";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
 
           {/* Home Display */}
           <Route path="/" element={<Home/>}/>
+
+          {/* About Display */}
+          <Route path="/about" element={<About/>}/>
 
           {/* Contact Display */}
           <Route path="/contact" element={<Contact/>}/>
