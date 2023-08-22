@@ -34,7 +34,8 @@ if RENDER_EXTERNAL_HOSTNAME:
 PROJECT_APPS = [
     "apps.blog",
     "apps.category",
-    "apps.contacts"
+    "apps.contacts",
+    "apps.courses"
 ]
 
 THIRD_PARTY_APPS = [
