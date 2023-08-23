@@ -1,4 +1,4 @@
-# from apps.courses.models import CoursesLibrary, PaidCoursesLibrary
+from apps.courses.models import CoursesLibrary, PaidCoursesLibrary
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -29,7 +29,7 @@ class CreateUserProfileView(APIView):
             sales=0,
         )
 
-        # CoursesLibrary.objects.get_or_create(author=user[0])
-        # PaidCoursesLibrary.objects.get_or_create(author=user[0])
+        CoursesLibrary.objects.get_or_create(author=user[0])
+        PaidCoursesLibrary.objects.get_or_create(author=user[0])
 
         return Response({'success': 'Message sent successfully'})
