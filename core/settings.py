@@ -35,7 +35,8 @@ PROJECT_APPS = [
     "apps.blog",
     "apps.category",
     "apps.contacts",
-    "apps.courses"
+    "apps.courses",
+    "apps.user",
 ]
 
 THIRD_PARTY_APPS = [
