@@ -121,7 +121,7 @@ class ListRelatedView(APIView):
                 status=status.HTTP_200_OK)
 
 
-class ListBySearchView(ApiView):
+class ListBySearchView(APIView):
     def post(self, request, format=None):
         data = self.request.data
 
@@ -131,6 +131,7 @@ class ListBySearchView(ApiView):
             return Response(
                 {'error': 'Category ID must be an integer'},
                 status=status.HTTP_404_NOT_FOUND)
+        
         price_range = data['price_range']
         sort_by = data['sort_by']
 
